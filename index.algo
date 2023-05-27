@@ -1,0 +1,20 @@
+PROCEDURE sorting (A: ARRAY_OF INTEGER)
+VAR
+    i,n,j : INTEGER
+    numberinsert : INTEGER
+BEGIN
+    FOR i FROM 1 TO A[n] DO
+        i:= 1; i < A[n]; i++;
+        numberinsert= A[i]
+          j=i-1;
+    END_FOR
+
+    WHILE ( j >= 0 && A[j] > numberinsert) DO
+        j=j+1
+        A[j+1]= A[j]
+    END_WHILE
+
+    WHILE (j >= 0 && A[j] < numberinsert) DO
+         A[j+1]=numberinsert
+    END_WHILE
+END
